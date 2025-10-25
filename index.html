@@ -1,0 +1,714 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Nilotpal Dhar</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">John Doe</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="https://www.shutterstock.com/image-photo/portrait-young-man-beard-looking-260nw-521079511.jpg" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Nilotpal Dhar</h1>
+        <b class="section__text__p2">Data Scientist & ML Explorer<p>From curiosity to clarity — turning data into intelligence </p></b>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('https://docs.google.com/document/d/1D30ur-LdFNFQQb5RI6Pk1k10t9WorjBhulMYVltVCLk/edit?tab=t.0#heading=h.acackgiepl9o')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/960px-LinkedIn_logo_initials.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/nilotpal-dhar-24b304294/'"
+          />
+          <img
+            src="https://iconlogovector.com/uploads/images/2024/04/lg-661b22765e1bf-GitHub.webp"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/nilotpaldhar2004'"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png"
+            alt="My leetcode profile"
+            class="icon"
+            onclick="location.href='https://leetcode.com/u/nilotpalDhar/'"
+          />
+        </div>
+      </div>
+    </section>
+
+
+
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVA_HrQLjkHiJ2Ag5RGuwbFeDKRLfldnDasw&s"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="https://logowik.com/content/uploads/images/education635.logowik.com.webp"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education Section</h3>
+              <p>B.Tech in Computer Science and Business Systems (CSBS)<br />Academy of Technology, West Bengal | 2023-2027</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              When I began my journey in Computer Science and Business Systems (CSBS) at the Academy of Technology, West Bengal, I wasn’t sure which path to follow — AI/ML or Web Development. Like most first-year students, I explored both, learning the fundamentals of programming, logic, and problem-solving.
+
+Soon, I discovered where my true curiosity lies — in Artificial Intelligence, Machine Learning, and Data Visualization. I became fascinated by how data, when analyzed mathematically, can tell powerful stories and even predict future trends.
+
+Since then, I’ve built a strong foundation in Python, SQL, Pandas, NumPy, Matplotlib, Scikit-learn, and DSA in C++ to strengthen my analytical thinking. I enjoy experimenting with models, visualizing complex datasets, and transforming raw information into meaningful insights.
+
+For me, AI isn’t just about algorithms — it’s about creating intelligent systems that make human lives easier. Every project I take on strengthens my belief that data has the power to drive positive change.
+
+Now, as a 3rd-year student, I’m exploring ML model deployment and data storytelling, aspiring to become a Machine Learning Engineer who blends logic, creativity, and purpose to build impactful solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsw1zMV8PAOpSu-6ZMHdmSLvpLbr-eZU16FQ&s"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#Skills'"
+      />
+    </section>
+
+
+
+    <section id="Skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="Skills-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="Skills-sub-title">Programming Languages</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkdgUkYVq9-UPHtkrQyNzA1t-hCdSG65-XYw&s"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>python</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C++</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://img.icons8.com/?size=1200&id=mfkStOwP4EC0&format=jpg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://umangsoftware.com/wp-content/uploads/2020/05/SQL-logo.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://1000logos.net/wp-content/uploads/2020/09/Java-Logo.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Databases</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="https://algorithmtraining.com/wp-content/uploads/2024/09/ORACLE-SQL-PLSQL-training-instutes-in-Hyderabad-Algorithm-training-institute.jpg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Oracle PL/SQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://pngimg.com/d/mysql_PNG9.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MYSQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Libraries</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCpCB6Du8H6Lrm5WIbDcdW59uqoSiL-eeTlw&s"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Pandas</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://img.icons8.com/?size=1200&id=aR9CXyMagKIS&format=jpg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Numpy</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4n_jslegPeiEdIRPGu4DoJi76TjV8uejO0g&s"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Matplotlib</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://cdn.worldvectorlogo.com/logos/seaborn-1.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>seaborn</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/1200px-Scikit_learn_logo_small.svg.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Scikit learn</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Tools</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/1767px-Jupyter_logo.svg.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Jupyter notebook</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Github</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://algotrading101.com/learn/wp-content/uploads/2021/05/Google-Colab-Guide-e1620759490851.jpg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Google colab</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://e1.pngegg.com/pngimages/981/101/png-clipart-sleek-xp-software-dev-c-icon-thumbnail.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Dev C++</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnoirCtiJhhN8Tvo0FJRRd4CInsOXkRX9EbA&s"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>visual Studio Code</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Soft skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="https://w7.pngwing.com/pngs/484/131/png-transparent-computer-icons-problem-solving-brain-miscellaneous-text-people.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Problem-Solving</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://thumbs.dreamstime.com/b/human-head-science-icons-concept-scientific-discoveries-idea-learning-51392330.jpg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Critical Thinking</h3>
+    
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7zcXiAIcYVhHlfV5Y-j6-NA_aor9Fawo_lw&s"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>conversation</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://img.freepik.com/premium-vector/teamwork-logo-icon-vector-art-illustration-collaboration-projects_1034893-4827.jpg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Teamwork</h3>
+                  
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/9815/9815976.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Time Management</h3>
+                  
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsw1zMV8PAOpSu-6ZMHdmSLvpLbr-eZU16FQ&s"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    
+
+
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="https://storage.googleapis.com/kaggle-datasets-images/3375918/5872805/e6c438e764799de9a90ae10bd32c51cc/dataset-cover.jpg?t=2023-06-08-06-58-37"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Movie Recommender System</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/nilotpaldhar2004/movie-recommender-system'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://movie-recommender-system-cma4qjqed65yausybn4vrd.streamlit.app'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="https://imgscf.slidemembers.com/docs/1/1/837/stock_market_prediction_presentation_slide_design_836101.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">TATAGLOBAL Stock Predictor</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/nilotpaldhar2004/TATAGLOBAL_Stock_Predictor'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://tataglobalstockpredictor-cvqbaxumotpd7a8kf7ccca.streamlit.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="https://media.licdn.com/dms/image/v2/D4D22AQFTUX-NTBbORQ/feedshare-shrink_800/feedshare-shrink_800/0/1718919808081?e=2147483647&v=beta&t=_v47NfFEbUtCUptLgSBXwWJCric_t4wZSNOx9H-2dHw"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">pizza sales sql analysis</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/nilotpaldhar2004/pizza-sales-sql-analysis'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/nilotpaldhar2004/pizza-sales-sql-analysis/blob/main/Pizza_Sales_Analysis.pdf'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="https://static.vecteezy.com/system/resources/previews/002/249/403/non_2x/3-dots-icon-symbol-for-website-and-mobile-app-free-vector.jpg"
+                alt="More Projects"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Projects </h2>
+            <p>For more Projects, check my github repositories</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/nilotpaldhar2004?tab=repositories'"
+              >
+                Explore
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsw1zMV8PAOpSu-6ZMHdmSLvpLbr-eZU16FQ&s"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+
+<section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">MY WORK</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT86J-cU1jQRGgrF00_3nSdUUSgFaa11_2pg&s"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Kaggle Competitions</h3>
+                  <p>Participated in Titanic Survival Prediction and House Price Prediction competitions</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://cdn.hashnode.com/res/hashnode/image/upload/v1674879149767/3e7758ee-04a2-4b16-9dd4-0af1450a70a4.jpeg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>DSA & Competitive Programming Ongoing</h3>
+                  <p>Solving algorithmic problems on LeetCode & HackerRank using C++</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://storage.googleapis.com/kaggle-datasets-images/3375918/5872805/e6c438e764799de9a90ae10bd32c51cc/dataset-cover.jpg?t=2023-06-08-06-58-37"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Movie Recommendation System</h3>
+                  <p>Built a content-based recommender system using Python, Cosine Similarity</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://media.licdn.com/dms/image/v2/D4D22AQFTUX-NTBbORQ/feedshare-shrink_800/feedshare-shrink_800/0/1718919808081?e=2147483647&v=beta&t=_v47NfFEbUtCUptLgSBXwWJCric_t4wZSNOx9H-2dHw"
+                  alt="SQL Project"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL Project</h3>
+                  <p>Analyzed pizza sales dataset with SQL and solve Query</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Training and certificate</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVer_wMBRrUuTJfkLE_pq1nZRrlaHrWVkNUA&s"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Oracle</h3>
+                  <p><a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=46E7BE4F8D11DD78A31A08C5CF83A595D26E68334599294AAED48EA7726E64B4">Oracle Cloud Infrastructure 2025 Certified Data Science Professional</a></p>
+                  <h5><a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=46E7BE4F8D11DD78A31A08C5CF83A595D26E68334599294AAED48EA7726E64B4">View Certification</a></h5>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://it.cornell.edu/sites/default/files/styles/article_banner/public/itc-drupal10-images/LinkedInLearningLogoLarge.PNG?h=76c528b5&itok=1CsWLsRi"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Linkedin</h3>
+                  <p><a href="https://www.linkedin.com/learning/certificates/a15dc9f6575c2e9ad3bc5bcacb51832013eadcd080b77b6649edb108713369b6?trk=share_certificate">Career Essentials in Data Analysis by  Microsoft and LinkedIn </a></p>
+                  <h5><a href="https://www.linkedin.com/learning/certificates/a15dc9f6575c2e9ad3bc5bcacb51832013eadcd080b77b6649edb108713369b6?trk=share_certificate">View Certification</a></h5>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://sn-portals-cognitiveclass.s3.us-south.cloud-object-storage.appdomain.cloud/644bcxng43h754iyqftkagb7aen1"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Cognitive Class</h3>
+                  <p><a href="https://courses.cognitiveclass.ai/certificates/11ca487cc6dc4cb582dbd91987d9434b">Python 101 for Data Science</a></p>
+                  <h5><a href="https://courses.cognitiveclass.ai/certificates/11ca487cc6dc4cb582dbd91987d9434b">View Certification</a></h5>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVer_wMBRrUuTJfkLE_pq1nZRrlaHrWVkNUA&s"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Oracle</h3>
+                  <p><a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=B6F003F5C71782785DC7ADD7E4AD6DDBE0EE4C4BFE87C128EA255AAB8FB48879">Oracle Cloud Infrastructure 2025 AI Foundations Associate</a></p>
+                  <h5><a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=B6F003F5C71782785DC7ADD7E4AD6DDBE0EE4C4BFE87C128EA255AAB8FB48879">View Certification</a></h5>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/4/40/HackerRank_Icon-1000px.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HackerRank</h3>
+                  <p><a href="https://www.hackerrank.com/certificates/iframe/bce24d37a7fd">sql (Intermediate)</a></p>
+                  <h5><a href="https://www.hackerrank.com/certificates/iframe/bce24d37a7fd">View Certification</a></h5>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="https://logowik.com/content/uploads/images/udemy-new-20212512.jpg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Udemy</h3>
+                  <p><a href="https://www.udemy.com/certificate/UC-e869d7f9-8c15-4fd3-ab2d-b11911c6c770/">NumPy, SciPy, Matplotlib & Pandas A-Z: Machine Learning</a></p>
+                  <h5><a href="https://www.udemy.com/certificate/UC-e869d7f9-8c15-4fd3-ab2d-b11911c6c770/">View Certification</a></h5>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsw1zMV8PAOpSu-6ZMHdmSLvpLbr-eZU16FQ&s"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:dharnilotpal31@gmail.com">dharnilotpal31@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/960px-LinkedIn_logo_initials.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/nilotpal-dhar-24b304294/">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="https://i.pinimg.com/564x/ba/4d/0c/ba4d0c43da5031d2108b579a4b1d6a80.jpg"
+            alt="Whatsapp icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://WA.me/919362030086">Whatsapp</a></p>
+        </div>
+      </div>
+    </section>
+
+
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169;2025 Nilotpal Dhar. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
